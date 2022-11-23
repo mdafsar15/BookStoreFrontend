@@ -186,15 +186,15 @@ export class CartComponent implements OnInit ,OnChanges{
     // });
   }
   continue() {
-    this.cartService.displayBooksInCart().subscribe((response: any) => {
-      console.log('book in cart:', response);
-      this.bookSum = response.data.cartBooks;
-      this.bookSum.forEach(function (val) {
-        console.log('book1:', val);
-        console.log('name:', val.book.bookName);
-      });
-    });
-    this.disp = true;
+    // this.cartService.displayBooksInCart().subscribe((response: any) => {
+    //   console.log('book in cart:', response);
+    //   this.bookSum = response.data.cartBooks;
+    //   this.bookSum.forEach(function (val) {
+    //     console.log('book1:', val);
+    //     console.log('name:', val.book.bookName);
+    //   });
+    // });
+    // this.disp = true;
   }
 
   removeQuantity(cartBook: any) {
